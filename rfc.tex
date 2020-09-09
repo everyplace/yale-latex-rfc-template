@@ -1,0 +1,88 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphics}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[rightcaption, raggedright]{sidecap}
+\usepackage [autostyle, english = american]{csquotes}
+\MakeOuterQuote{"}
+
+
+\usepackage[T1]{fontenc}
+\usepackage[usefilenames,% Important for XeLaTeX
+  RMstyle=Light,
+  SSstyle=Light,
+  TTstyle=Light,
+  DefaultFeatures={Ligatures=Common}]{plex-otf} %
+\renewcommand*\familydefault{\ttdefault} %% Only if the base font of the document is to be monospaced
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=[rgb]{0.5,0.5,0.5},
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=magenta,
+}
+\urlstyle{same}
+
+
+\title{\LARGE A New RFC Template}
+\author{Erin Sparling, \href{mailto:erin.sparling@yale.edu}{erin.sparling@yale.edu}, Yale University}
+
+% citations
+% https://www.sharelatex.com/learn/Hyperlinks
+
+\begin{document}
+\maketitle
+
+\tableofcontents
+
+\thispagestyle{empty}
+% \setcounter{section}{0}
+
+
+% \addcontentsline{toc}{section}{Abstract}
+
+\newpage
+
+\section{Introduction}
+
+The internet (here used as a proxy for a rough collection of protocols, servers, interconnects and activities) approaches infinity in both its complexity and rate of change. Attempting to teach the internet is a lesson in futility, as learning any topic results in expedient irrelevance, and betting on a future direction can have dramatic consequences for students work as well as their careers. Constructing curriculum, and convincing institutions that the curriculum is worth exploring, is therefore a waste of time at best, and actively against the best interestes of the students at worst. Despite these concerns, "modern" approaches to the web have been taught for the better part of two decades.
+
+This document attempts to templatize the writings of Art 750a The Trough of Practicality.
+
+% Note: this next heading is hidden from the TOC
+\section*{Topics to Delve Into}
+
+\begin{enumerate}
+    \item Services begged or borrowed (github, google groups, slack, glitch, apple school edu account)
+    \item An approach to service design for students' projects, in response to API changes
+    \item Using and abusing location in a COVID-19 aware digital product \cite{CONTACT-TRACING}
+\end{enumerate}
+
+\newpage
+
+
+\subsection{Iterations}
+Future topics to consider include the paying for services with user data, and the fickleness of APIs with regards to artistic exploration.
+
+
+% By manually adding the line to the TOC, you could control the name of the section separate from display of the section
+\addcontentsline{toc}{section}{Appendix}
+\section*{Appendix}
+\subsection*{Class Resources} 
+\begin{enumerate}
+    \item A google doc masquerading as a website documenting a syllabus \cite{ONLINE-SYLLABUS}
+    \item A spreadsheet hidden behind a vue app displaying time-sensitive links \cite{CLASS-RESOURCES}
+    
+\end{enumerate}
+
+\addcontentsline{toc}{section}{References}
+\bibliography{./biblio.bib}
+\bibliographystyle{ieeetr}
+ 
+\end{document}
+\end
